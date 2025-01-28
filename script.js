@@ -1,7 +1,7 @@
 let data = [];
 
 // Fetch data from the server
-fetch('http://localhost:3000/getData')
+fetch(process.env.API_URL)
   .then(response => response.json())
   .then(fetchedData => {
     data = fetchedData;

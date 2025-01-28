@@ -1,17 +1,16 @@
 const express = require('express');
 const mysql = require('mysql2');
 const app = express();
-const port = 3000;
+const port = process.env.SERVER_PORT || 3000;
 
 // Serve static files from the current directory
 app.use(express.static(__dirname));
 
-// Create connection to the database
 const db = mysql.createConnection({
-  host: '192.168.50.100',
-  user: 'root', // replace with your database username
-  password: 'STC4kvu@me', // replace with your database password
-  database: 'bible_character'
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER, // replace with your database username
+  password: process.env.DB_PASSWORD, // replace with your database password
+  database: process.env.DB_NAME
 });
 
 // Connect to the database
