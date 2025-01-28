@@ -1,0 +1,87 @@
+body {
+    margin: 0; /* Remove default body margin */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    
+  }
+
+  header {
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    position: sticky; /* Make the header sticky */
+    top: 0; /* Stick to the top of the page */
+    z-index: 1000; /* Ensure the header stays above other content */
+    display: flex; /* Use flexbox to align logo and text */
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Center content horizontally */
+  }
+  
+  .header-logo {
+    height: 100px; /* Adjust the height of the logo */
+    margin-right: 20px; /* Add space between the logo and the text */
+  }
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 10px 0 0;
+  opacity: 0.9;
+}
+
+  .card {
+    margin-top: 30px; /* Add space between header and card */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 20px; /* Add space between card and button */
+  }
+  .card h2 {
+    margin-top: 0;
+  }
+  .card ul {
+    text-align: left;
+    list-style-type: circle;
+    padding-left: 20px;
+  }
+  .card ul li {
+    margin-bottom: 10px;
+  }
+  button {
+    padding: 15px 30px; /* Increased padding for a larger button */
+    font-size: 18px; /* Larger font size */
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  footer {
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Push the footer to the bottom of the page */
+  }
